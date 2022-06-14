@@ -1,291 +1,428 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>ToyStore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hlegals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
+    
 </head>
 <body>
-    <header class="header">
-        <div class="header-bg">
-            <div class="header-center">
-                <div class="header-contact">
-                    <div class="header-left">    
-                        <span>Call Us: <a href="tel:+12139745898">+1 213 974-5898</a></span>
-                        <span>Email: <a href="mailto:toystore@template.com">toystore@template.com</a></span>
-                    </div>    
-                    <div class="header-icons">
-                        <ul class="social-list">
-                            <li><a href="#"><img src="./IMG/twitter.png"></a>  </li>             
-                            <li><a href="#"><img src="./IMG/facebook.png"></a></li>               
-                            <li><a href="#"><img src="./IMG/ins.png"></a></li>               
-                            <li><a href="#"><img src="./IMG/icon.png"></a></li>               
-                            <li><a href="#"><img src="./IMG/youtube.png"></a></li>   
-                        </ul>           
-                    </div>
+    <div class="container-fluid bg">
+      <div class="main-header">
+        <header class="container header">
+            <div class="nav-content d-flex justify-content-between align-items-center">
+              <div class="left-contant d-flex align-items-center">
+                <a href="index.html" class="logo"><img src="./IMG/Logo Min (1).png"></a>
+              </div>
+              <div class="actions d-flex-column">
+                <div class="before-nav d-flex">
+                  <div class="radio-lang">
+                    <input type="radio" class="btn-check" name="options" id="option1" autofocus>
+                    <label class="btn-leng" for="option1">ук</label>
+                  
+                    <input type="radio" class="btn-check" name="options" id="option2">
+                    <label class="btn-leng" for="option2">ру</label>
+                      
+                    <input type="radio" class="btn-check" name="options" id="option4">
+                    <label class="btn-leng" for="option4">en</label>                  
+                  </div>
+                  <div class="contact">
+                    <a href="https://goo.gl/maps/f8XwoSe9ufsjTGJg7" class="adress">Одеса, Адміральський пр., 3</a>
+                    <a href="tel:+380503901591" class="tel">+38 (050) 390 15 91</a>
+                    <a href="#" class="fb"><img src="./IMG/facebook.png"></a>
+                  </div>
                 </div>
+                <div class="navigation">
+                  <a href="#" class="nav-items">про нас</a>
+                  <a href="#" class="nav-items">послуги</a>
+                  <a href="#" class="nav-items">команда</a>
+                  <a href="#" class="nav-items">публікації</a>
+                  <a href="#" class="nav-items">контакти</a>
+                </div>
+                <div class="mobile-action-botton">
+                  <nav class="top-nav" id="top-nav">
+                    <a href="index.html" class="logo"><img src="./IMG/Logo Min.png" alt="Your Logo Here"></a>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                      <li><a href="#">про нас</a></li>
+                      <li><a href="#">послуги</a></li>
+                      <li><a href="#">команда</a></li>
+                      <li><a href="#">публікації</a></li>
+                      <li><a href="#">контакти</a></li>
+                    </ul>
+                  </nav>
+                </div> 
+              </div>    
             </div>
+        </header>
+        <div class="main-title text-center position-relative">
+          <h1 class="main-text">системний адміністратор правових рішень</h1>
+        </div>    
+      </div>
+      
+      <div class="container d-flex justify-content-center nav-menu position-relative">
+        <a href="#scroll-block" class="scroll position-absolute">
+          <img src="./IMG/Scroll down.png">
+        </a>
+        <div class="tabs">
+          <nav>
+            <a>Послідовні</a>
+            <a>Клієнтоорієнтовані</a>
+            <a>Інноваційні</a>
+            <a>Бізнес-орієнтовані юристи</a>
+          </nav>
+          <div class="content">
+            <h3>Перевертаємо уявлення про юридичні послуги</h3>
+            <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
+          </div>
+          <div class="content">
+            <h3>Перевертаємо уявлення про юридичні послуги</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem numquam provident nemo accusamus sint omnis ut officiis, quod facilis vero molestiae error mollitia sed earum ratione dolores optio laudantium.</p>
+          </div>
+          <div class="content">
+            <h3>Перевертаємо уявлення про юридичні послуги</h3>
+            <p>Possimus eveniet corporis, excepturi reprehenderit odio laborum exercitationem deleniti velit, reiciendis voluptatibus, perferendis vitae maiores itaque facilis aliquam maxime qui numquam. Delectus?</p>
+          </div>
+          <div class="content">
+            <h3>Перевертаємо уявлення про юридичні послуги</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur, voluptatem fuga eius accusamus voluptate minima dignissimos! Error laborum nobis placeat a quasi ab quis, ad debitis labore illum magni.</p>
+          </div>   
+        </div>  
+        <div class="slider-mobile">
+          
+          <div class="one-time">
+            <div>
+              <span>Послідовні</span>
+              <h3>Перевертаємо уявлення про юридичні послуги</h3>
+              <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
+            </div>
+            <div>
+              <span>Послідовні</span>
+              <h3>Перевертаємо уявлення про юридичні послуги</h3>
+              <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
+            </div>
+            <div>
+              <span>Послідовні</span>
+              <h3>Перевертаємо уявлення про юридичні послуги</h3>
+              <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
+            </div>
+            <div>
+              <span>Послідовні</span>
+              <h3>Перевертаємо уявлення про юридичні послуги</h3>
+              <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
+            </div>
+            
+          </div>
+
         </div>
-        <div class="header-snd-bg">
-            <div class="header-snd">
-                <div class="snd-right">
-                    <a href="index.html" class="logo">ToyStore</a>
-                    <nav class="navigation">
-                        <a href="#">Catalog</a>
-                        <a href="#">Delivery</a>
-                        <a href="#">About</a>
-                        <a href="#">Contacts</a>
-                    </nav>
-                </div>
-                <div class="snd-left">
-                    <span class="cart">Cart</span>
-                    <a href="#" class="cart-icon">
-                        <img src="./IMG/cart-icon.png">
-                    </a>
-                    <span class="cyrcle">0</span>
-                </div>
-            </div>
+          
+      </div>
+
+      <div class="container content-block">
+        <p class="text-block first">послуги<i class="bi bi-chevron-right"></i></p>
+        <h2 id="scroll-block">Що ми вміємо робити краще за інших?</h2>
+        <div class="block-wrapper d-flex flex-row flex-wrap justify-content-between">
+          <div class="wrapper-item">
+            <div class="sqr"><img src="./IMG/1.svg"></div>
+            <h4>IT та електронна комерція⟩⟩</h4>
+            <p>
+              Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста. 
+            </p>
+          </div>
+          <div class="wrapper-item">
+            <div class="sqr"><img src="./IMG/2.svg"></div>
+            <h4>Комплексний щоденний юридичний супровід</h4>
+            <p>
+              До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.
+            </p>
+          </div>
+          <div class="wrapper-item">
+            <div class="sqr"><img src="./IMG/3.svg"></div>
+            <h4>Структуризація корпоративних відносин</h4>
+            <p>
+              Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які впишуться в повсякденне життя вашої компанії. 
+            </p>
+          </div>
+          <div class="wrapper-item">
+            <div class="sqr"><img src="./IMG/4.svg"></div>
+            <h4>Побудовa договірних відносин</h4>
+            <p>
+              Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи замість очікування статусу update.
+            </p>
+          </div>
+          <div class="wrapper-item">
+            <div class="sqr"><img src="./IMG/5.svg"></div>
+            <h4>Захист бізнесу, інтелектуальної власності</h4>
+            <p>
+              А весь інший час він працюватиме над новими різноплановими проектами, тому вже точно не зупиниться в професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners замість корпоративного юриста.
+            </p>
+          </div>
+          <div class="wrapper-item">
+            <div class="sqr last"><img src="./IMG/6.svg"></div>
+            <h4>Судове представництво</h4>
+            <p>
+              Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?
+            </p>
+          </div>
+
         </div>
-    </header>
-    <div class="main-container">
-        <div class="fst-block">
-            <div class="fst-content">
-                <span>Say Hello to ToyStore!</span>
-                <h1>Free Ecommerce Template for Webflow</h1>
-                <button>
-                    <a href="">Open Catalog</a>
-                </button>
+      </div>
+    </div>  
+    <div class="container-fluid next-bg">
+      <div class="container">
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <div class="slider-block d-flex">
+              <img src="./IMG/man.jpg">
+              <div class="descriprion-block">
+                <p class="text-block second">команда<i class="bi bi-chevron-right"></i></p>
+                <p class="text-wrap">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+                <div class="person-wrapper">
+                  <div>
+                    <span class="person">Олександр Олександровський</span>
+                    <span class="person">Керуючий партнер</span>
+                  </div>
+                  
+                </div>
+                
+              </div>  
             </div>
-            <a href="#scroll-block" class="scroll">
-                <img src="./IMG/scroll.png">
-            </a>
+          </div>
+          
+          <div class="mySlides">
+            <div class="slider-block d-flex">
+              <img src="./IMG/man.jpg">
+              <div class="descriprion-block">
+                <p class="text-block second">команда<i class="bi bi-chevron-right"></i></p>
+                <p class="text-wrap">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+                <div class="person-wrapper">
+                  <div>
+                    <span class="person">Олександр Олександровський</span>
+                    <span class="person">Керуючий партнер</span>
+                  </div>
+                  
+                </div>
+              </div>  
+            </div>
+          </div>
+          
+          <div class="mySlides">
+            <div class="slider-block d-flex">
+              <img src="./IMG/man.jpg">
+              <div class="descriprion-block">
+                <p class="text-block second">команда<i class="bi bi-chevron-right"></i></p>
+                <p class="text-wrap">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+                <div class="person-wrapper">
+                  <div>
+                    <span class="person">Олександр Олександровський</span>
+                    <span class="person">Керуючий партнер</span>
+                  </div>
+                  
+                </div>
+              </div>  
+            </div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
         </div>
-        <div class="main">
-            <div class="snd-block">
-                <div class="bear">
-                    <img class="pic-bear" src="./IMG/Bear.png">
-                    <div class="bear-text">
-                        <h2>Stuffed Animals</h2>
-                        <button>
-                            <a href="#">Shop now</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="flower">
-                    <img class="pic-flower" src="./IMG/flower.png">
-                    <div class="fl-text">
-                        <h2>Wooden Toys</h2>
-                        <button>
-                            <a href="#">Shop now</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="trd-block">
-                <h3 id="scroll-block">Stuffed Animals</h3>
-                <div class="btn">
-                    <a href>See All Toys</a>
-                    <img class="arrow" src="./IMG/arrow-right.png">
-                </div>
-            </div>
-
-            <div class="lines">
-                <div class="fst-line"></div>
-                <div class="snd-line"></div>
-            </div>
-
-            <div class="toys-pic">
-                <div class="main-toy">
-                    <img src="./IMG/Bear.png">
-                    <div class="info">
-                        <h4 class="nametoy">Teddy Bear</h4>
-                        <span>$ 30.00 USD</span>
-                    </div>
-                    
-                </div>
-                <div class="main-toy-two">
-                    <img src="./IMG/UFO.png">
-                    <div class="info">
-                        <h4 class="nametoy">Mega Plush Toy</h4>
-                        <span>$ 38.00 USD</span>
-                    </div>
-                </div>
-                <div class="main-toy-two">
-                    <img src="./IMG/dog.png">
-                    <div class="info">
-                        <h4 class="nametoy">Cute Dog</h4>
-                        <span>$ 24.00 USD</span>
-                    </div>
-                        
-                </div>
-                <div class="main-toy-two">
-                    <img src="./IMG/cat.png">
-                    <div class="info">
-                        <h4 class="nametoy">Little Friend</h4>
-                        <span>$ 27.00 USD</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="frt-block">
-                <h3>Wooden Toys</h3>
-                <div class="btn">
-                    <a href>See All Toys</a>
-                    <img class="arrow" src="./IMG/arrow-right.png">
-                </div>
-            </div>
-
-            <div class="lines">
-                <div class="fst-line"></div>
-                <div class="snd-line"></div>
-            </div>
-
-            <div class="toys-pic">
-                <div class="main-toy">
-                    <img src="./IMG/flower.png">
-                    <div class="info">
-                        <h4 class="nametoy">Happy Flower</h4>
-                        <span>$ 38.00 USD</span>
-                    </div>
-                   
-                </div>
-                <div class="main-toy-two">
-                    <img src="./IMG/lift-m.png">
-                    <div class="info">
-                        <h4 class="nametoy">Lift Machine</h4>
-                        <span>$ 24.00 USD</span>
-                    </div>
-                </div>
-                <div class="main-toy-two">
-                    <img src="./IMG/camera.png">
-                    <div class="info">
-                        <h4 class="nametoy">Lift Machine</h4>
-                        <span>$ 32.00 USD</span>
-                    </div>
-                    
-                </div>
-                <div class="main-toy-two">
-                    <img src="./IMG/rabbit.png">
-                    <div class="info">
-                        <h4 class="nametoy">Little Rabbit</h4>
-                        <span>$ 16.00 USD</span>
-                    </div>
-                </div>
-
-
-            </div>
+          
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
-        <div class="snd-content">
-            <div class="text-content">
-                <p>About The Shop</p>
-                <h2>Watch Our Story</h2>
-                <p>
-                    There is no magic formula to write perfect ad copy. It is based on a number of factors, including ad placement, demographic, even the consumer’s mood.
-                </p>
-                <div class="btn-play">
-                    <img src="./IMG/play.png">
-                </div>
-            </div>
+      </div>
+      <div class="container block-cases">
+        <div class="raw cases-wrapper case-up d-flex">
+          <div class="col cases-item">
+            <p class="case-title">Успішні кейси</p>
+            <p>Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+            <span>Hillel IT School</span>
+          </div>
+          <div class="col cases-item">
+            <p>Підготовка комплексного юридичного висновку для європейського банку</p>
+            <span>WannaBiz</span>
+          </div>
+          <div class="col cases-item">
+            <p>Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+            <span>tapgerine</span>
+          </div>
         </div>
+        <div class="raw cases-wrapper case-down d-flex">
+          <div class="col-3-md cases-item">
+            <p>Представництво інтересів великого зернотрейдера в податковому спорі</p>
+            <span>3D LOOK</span>
+          </div>
+          <div class="col-4-md cases-item">
+            <p>Оскарження податкових повідомлень-рішень ДФС</p>
+            <span>adtelligent</span>
+          </div>
+          <div class="col-5-md cases-item">
+            <p>Супровід проекту з кредитування агротрейдерів мальтійським банком</p>
+            <span>Clikky</span>
+          </div>
+        </div>
+      </div>
+      
 
-        <div class="trd-content">
-            <div class="center-text">
-                <span>Made for Webflow</span>
-                <h2>Simple & Colorful Ecommerce Template for Your Business</h2>
-            </div>
-            <div class="main-text">
-                <div class="right-text">
-                    <span>
-                        Available for FREE!
-                    </span>
-                    <div class="green-line"></div>
-                    <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy</p>
-                    <button>
-                        <a href="#">GET IT NOW!</a>
-                    </button>
-                </div>
-                <div>
-                    <img src="./IMG/children.png">
-                </div>
-            </div>
-            <div class="border">
-                <div class="right-bd">
-                    <div class="btn-telegram">
-                        <img src="./IMG/telegram.png">
-                    </div>
-                    <div class="disc-text"> 
-                        <p>
-                            Subscribe to our newsletter & get 
-                            <span>
-                                10% discount!
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="left-bd">
-                    <form>
-                        <input type="text">
-                    </form>
-                    <button></button>
-                </div>
-            </div>
-            <div class="end-content">
-                <div class="center-text">
-                    <span>@ElasticThemes</span>
-                    <h2>We're on Instagram!</h2>
-                </div>
-                <div class="end-pic"> 
-                    <img src="./IMG/1.png">
-                    <img src="./IMG/2.png">
-                    <img src="./IMG/3.png">
-                    <img src="./IMG/4.png">
-                    <img src="./IMG/5.png">
-                    <img src="./IMG/6.png">
-                </div>
-                <button>
-                    <a href="#">See More Photos</a>
-                </button>
-            </div>
-        </div>
-        
+
     </div>
-    
-    <footer class="footer">
-        <div class="footer-bg">
-            <div class="footer-center">
-                <div class="f-logo">
-                    <a href="index.html">ToyStore</a>
+    <div class="container-fluid sponsors-contant">
+      <p>Вже довіряють нам</p>
+      <div class="sponsors">
+        <img src="./IMG/Item.png">
+        <img src="./IMG/Item (1).png">
+        <img src="./IMG/Item (2).png">
+        <img src="./IMG/Item (3).png">
+        <img src="./IMG/Item (4).png">
+        <img src="./IMG/Item (5).png">
+        <img src="./IMG/Item (6).png">
+        <img src="./IMG/Item (7).png">
+        <img src="./IMG/Item (8).png">
+        <img src="./IMG/Item (9).png">
+        <img src="./IMG/Item (11).png">
+        <img src="./IMG/Item (10).png">
+      </div>
+
+    </div>
+
+    <div class="container-fluid publicks-bg">
+      <div class="container publicks">
+        <p class="text-block second">Публікації<i class="bi bi-chevron-right"></i></p>
+        <p class="text-wrap">Нам є що розповісти</p>
+        
+        <div class="publicks-wrapper">
+          <div class="publicks-item">
+            <div class="item">
+              <div class="item-block">
+                <div class="item-title">
+                  <h4>Валютний контроль помер, хай живе валютний контроль!</h4>
+                  <span>14 червня</span>
                 </div>
-                <div class="footer-nav">
-                    <a href="#">Home</a>
-                    <a href="#">Catalog</a>
-                    <a href="#">Delivery</a>
-                    <a href="#">About</a>
-                    <a href="#">Contacts</a>
-                </div>
-                <div>
-                    <ul class="social-list">
-                        <li><a href="#"><img src="./IMG/twitter.png"></a>  </li>             
-                        <li><a href="#"><img src="./IMG/facebook.png"></a></li>               
-                        <li><a href="#"><img src="./IMG/ins.png"></a></li>               
-                        <li><a href="#"><img src="./IMG/icon.png"></a></li>               
-                        <li><a href="#"><img src="./IMG/youtube.png"></a></li>   
-                    </ul>           
-                </div>
+                <p>Експерти проводять конференції, круглі столи та іншого штибу заходи на тему «лібералізація валютного законодавства». Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».</p>
+              </div>
             </div>
-            <div class="end-footer">
-                <p>Created with love by Elastic Themes</p>
-                <ul>
-                    <p class="power">Powered by</p> 
-                    <li>Webflow</li>
-                    <li class="mark">Style Guide</li>
-                    <li class="mark">Licensing</li>
-                </ul>
+            <div class="item">
+              <img src="./IMG/image.png">
+              <div class="item-block">
+                <div class="item-title">
+                  <h4>Заповіт міленіала</h4>
+                  <span>19 серпня</span>
+                </div>
+                <p>Що і як передаватимуть у спадщину сучасні влогери, опініон лідери і криптомільйонери Типовий спадок українського покоління Х виглядає так: квартира у…</p>
+              </div>
             </div>
+          </div>
+          <div class="publicks-item second-block">
+            <div class="item">
+              <img src="./IMG/image (1).png">
+              <div class="item-block">
+                <div class="item-title">
+                  <h4>Equity associate</h4>
+                  <span>22 квітня</span>
+                </div>
+                <p>На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./IMG/image (2).png">
+              <div class="item-block">
+                <div class="item-title">
+                  <h4>Закон про мови: як зробити свій сайт відповідним</h4>
+                  <span>19 серпня</span>
+                </div>
+                <p>Наталія Кирик, керівник контент студії Wordfactory.ua По-перше, це красиво! Це аргумент номер один на користь україномовного сайту. По-друге, це ефективно. У…</p>
+              </div>
+            </div>
+          </div>
+          <div class="publicks-item third-block">
+            <div class="item">
+              <img src="./IMG/image (3).png">
+              <div class="item-block">
+                <div class="item-title">
+                  <h4>Штраф для «Корпорації добра»: що буде з Google та іншими за порушення GDPR</h4>
+                  <span>29 вересня</span>
+                </div>
+                <p>І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами Mind.ua 21 січня Національна комісія із захисту даних.</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./IMG/image (5).png">
+              <div class="item-block">
+                <div class="item-title">
+                  <h4>Компенсація витрат на навчання дитини в дитячому садку та школі</h4>
+                  <span>5 Лютого 2018</span>
+                </div>
+                <p>Про що йде мова В червні цього року Верховна Рада внесла зміни до Податкового кодексу України. Відтепер батьки, які отримують офіційну…</p>
+              </div>
+            </div>
+          </div>
+        </div>
+               
+      </div> 
+      <div class="block-button d-flex">
+        <div>
+          <button>Ще публікації</button>
+        </div>
+      </div>
+
+
+      
+
+    </div>
+
+    <footer class="container-fluid footer-bg  d-flex justify-content-between">
+      <div class="container footer-part">
+        <div class="container footer">
+          <div class="footer-block">
+            <div class="d-flex footer-adress align-items-center">
+              <p>Одеса, Адміральський пр., 3</p>
+              <a href="https://goo.gl/maps/f8XwoSe9ufsjTGJg7" class="adress-foot">Подивитися на мапі</a>
+            </div>
+            <div class="d-flex footer-contact align-items-center">
+              <a href="#"><img src="./IMG/Vector.png"></a>
+              <a href="tel:+380503901591" class="tel">+38 (050) 390 15 91</a>
+              <a href="mailto:contact@hlegals.net" class="mail">contact@hlegals.net</a>
+            </div>  
+          </div>
+          <div class="produced">
+            <span>© 2021 ТОВ Юридична компанія «HLEGALS»</span>
+          </div>
+  
         </div>
         
-    </footer>
+      </div>
+      
 
+    </footer>
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="application/javascript" src="./JS/scripts.js"></script>
 </body>
 </html>
